@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 
+=======
+# 在末尾添加了一个新的用户数据
+>>>>>>> branch 'master' of https://github.com/yangmankuku/sp-config.git
 sp:
   user-service:
     users: "[{\"id\":7, \"username\":\"abc\",\"password\":\"123\"},{\"id\":8, \"username\":\"def\",\"password\":\"456\"},{\"id\":9, \"username\":\"ghi\",\"password\":\"789\"},{\"id\":99, \"username\":\"aaa\",\"password\":\"111\"}]"
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/yangmankuku/sp-config.git
 spring:
   application:
     name: user-service
@@ -12,4 +20,10 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+      defaultZone: http://eureka1:2001/eureka, http://eureka1:2002/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
